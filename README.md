@@ -9,4 +9,4 @@ Page 2 : About Page, this shows the "about us" information of my project, which 
 Page 3,4,5,6 : These Pages Consists of each cars information , all fetched from my cars.json file and some images I added into the assets folder myself.
 
 
-
+PLEASE NOTE : In order to see my project, its in the master branch, when trying to commit to main I was having some problems, so I commited to master branch instead.
