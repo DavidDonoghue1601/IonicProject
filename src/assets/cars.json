@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Lamborghini Sesto Elemento",
+      "price": "$2,000,000",
+      "description": "Only 20 units ever made. Built with carbon fiber technology, this Lamborghini is one of the lightest and fastest ever created.",
+      "image": "assets/car1pic1.jpg",
+      "image2": "assets/car1pic2.jpg",
+      "mileage": "3,200 miles",
+      "engine": "5.2L V10",
+      "horsepower": "570 hp",
+      "drivetrain": "AWD"
+    },
+    {
+      "id": 2,
+      "name": "Ferrari LaFerrari",
+      "price": "$4,100,000",
+      "description": "Hybrid performance with Italian flair. A masterpiece from Ferrari’s stable.",
+      "image": "assets/car2pic2.jpg",
+      "image2": "assets/car2pic3.jpg",
+      "mileage": "4,500 miles",
+      "engine": "6.3L V12 Hybrid",
+      "horsepower": "950 hp",
+      "drivetrain": "RWD"
+    },
+    {
+      "id": 3,
+      "name": "Bugatti Chiron Super Sport",
+      "price": "$5,800,000",
+      "description": "1500 horsepower, world-class luxury, and stunning performance.",
+      "image": "assets/car3pic1.jpg",
+      "image2": "assets/car3pic6.jpg",
+      "mileage": "2,800 miles",
+      "engine": "8.0L W16 Quad-Turbo",
+      "horsepower": "1,578 hp",
+      "drivetrain": "AWD"
+    },
+    {
+      "id": 4,
+      "name": "McLaren P1",
+      "price": "$1,150,000",
+      "description": "A hybrid hypercar with Formula 1 DNA and cutting-edge design.",
+      "image": "assets/car4pic1.jpg",
+      "image2": "assets/car4pic4.jpg",
+      "mileage": "5,000 miles",
+      "engine": "3.8L V8 Twin-Turbo Hybrid",
+      "horsepower": "903 hp",
+      "drivetrain": "RWD"
+    }
+  ]
+  

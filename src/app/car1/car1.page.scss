@@ -1,0 +1,118 @@
+:host {
+    display: block;
+    background-color: black;
+    color: white;
+  }
+  
+  //top toolbar
+  .custom-toolbar {
+    --background: transparent;
+    padding: 20px;
+    height: 100px;
+  }
+
+  //title wrap to keep things centered
+  .title-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  //showroom title
+  .custom-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+  
+  //back button wrap
+  .back-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  //back button itself
+  .back-button {
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 12px;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  
+  //car image
+  .car-image {
+    width: 48%; 
+    max-height: 400px; 
+    object-fit: contain; 
+    border: 3px solid #333; 
+    border-radius: 10px;
+  }
+  
+ //car details
+  .car-details-box {
+    flex: 1;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+
+  //car name with font
+  .car-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+  
+  //car description box
+  .car-description-box {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    color: #bbb;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+ 
+  
+  //Bold Text for Price: Description: etc
+  .car-description-box strong {
+    color: #fff;
+  }
+
+  //Making Back button look nice, and sleek
+
+  ion-button.back-button {
+    --background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
+    --box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  //Ensures Sleek behavior when hovered
+  ion-button.back-button:hover {
+    --background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  }
+  
+  

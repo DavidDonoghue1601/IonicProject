@@ -1,0 +1,210 @@
+:host {
+  display: block;
+  background-color: black;
+  color: white;
+}
+
+//top toolbar 
+.custom-toolbar {
+  --background: transparent;
+  padding: 10px; 
+  height: 70px; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+//showroom title
+.custom-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  margin-right: 10px;
+}
+
+//about button
+.about-button {
+  background-color: #2a2a2a;
+  width: 200px;
+  height: 62px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border: none;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 280px);
+  display: flex;
+  justify-content: center;
+}
+
+//switch account button
+.switch-account-button {
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+
+//car images
+.car-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+
+//car boxes styling
+.car-card {
+  background: #2a2a2a;
+  color: #df8a0b;
+  border-radius: 10px;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  margin-top: 3rem;
+}
+
+//make changes when user hovers over
+.car-card:hover {
+  transform: scale(1.05);
+}
+
+//login styling
+.login-form {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.username-input {
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+//improving buttons
+.login-button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+}
+
+.username-wrapper {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+}
+
+//improving buttons
+.switch-account-wrapper {
+  position: absolute;
+  top: 10px;
+  left: calc(50% + 70px);
+  display: flex;
+  justify-content: center;
+}
+
+
+//improving buttons
+ion-button.about-button,
+ion-button.switch-account-button,
+ion-button.login-button {
+  --background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
+  --color: #ffffff;
+  --border-radius: 12px;
+  --padding-start: 1.5rem;
+  --padding-end: 1.5rem;
+  --box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+//make changes when user hovers
+ion-button.about-button:hover,
+ion-button.switch-account-button:hover,
+ion-button.login-button:hover {
+  --background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+
+//improving buttons
+ion-button.login-button {
+  --background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
+  --color: #ffffff;
+  --border-radius: 0px;
+  --padding-top: 0.75rem;
+  --padding-bottom: 0.75rem;
+  --padding-start: 1.5rem;
+  --padding-end: 1.5rem;
+  --box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  font-weight: 500;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 250px;
+  margin: 1rem auto 0 auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+//on hover, make it change
+ion-button.login-button:hover {
+  --background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+
+//switch account button
+.switch-account-button {
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border: none;
+}

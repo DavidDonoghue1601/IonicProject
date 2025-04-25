@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <div class="title-wrapper">
+      <span class="custom-title">David's Showroom</span>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="about-us-info">
+    <h1>Our Team</h1>
+    
+  </div>
+
+  <!-- random team info -->
+  <div class="team-section">
+    <div class="team-member">
+      <img src="assets/man1.jpg" alt="Team Member 1" class="team-image" />
+      <div class="team-info">
+        <h3>David O'Connor</h3>
+        <p>Founder & CEO</p>
+        <p>David has over 20 years of experience in the luxury car industry. He founded the showroom with the vision of bringing the finest vehicles to enthusiasts all over the World.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <img src="assets/man2.jpg" alt="Team Member 2" class="team-image" />
+      <div class="team-info">
+        <h3>Michael Byrne</h3>
+        <p>Head of Sales</p>
+        <p>Michael is passionate about matching customers with their dream cars. With a keen eye for detail and exceptional customer service, he leads our sales team to success.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to home button -->
+  <div class="back-button-wrapper">
+    <ion-button class="back-button" (click)="navigateToHome()">Back to Home</ion-button>
+  </div>
+
+  <!-- Showroom information (address and contact info) -->
+  <div class="showroom-info">
+    <div class="address">
+      <p>Building 11,</p>
+      <p>Booming Park Way,</p>
+      <p>Co. Dublin, Ireland.</p>
+    </div>
+    <div class="contact">
+      <p>+353 (00) 123-4567</p>
+      <p>David's Showroom</p>
+    </div>
+  </div>
+</ion-content>

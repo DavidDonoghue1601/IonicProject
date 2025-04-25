@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <div class="title-wrapper">
+      <span class="custom-title">David's Showroom</span>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="back-button-wrapper">
+    <ion-button class="back-button" (click)="navigateToHome()">Back to Home</ion-button>  
+  </div>
+
+  <div class="car-grid">
+    <div class="car-card" *ngFor="let car of cars">
+
+      <img [src]="car.image" alt="{{ car.name }}" class="car-image" />
+      <img [src]="car.image2" alt="{{ car.name }}" class="car-image" />
+
+      <h2 class="car-name">{{ car.name }}</h2>
+
+      <div class="car-description-box">
+        <div class="details">
+          <p><span>💰</span> <strong>Price:</strong> {{ car.price }}</p>
+        </div>
+        <div class="details">
+          <p><span>📝</span> <strong>Description:</strong> {{ car.description }}</p>
+        </div>
+        <div class="details">
+          <p><span>⛽</span> <strong>Mileage:</strong> {{ car.mileage }}</p>
+        </div>
+        <div class="details">
+          <p><span>🛠️</span> <strong>Engine:</strong> {{ car.engine }}</p>
+        </div>
+        <div class="details">
+          <p><span>🚗</span> <strong>Horsepower:</strong> {{ car.horsepower }}</p>
+        </div>
+        <div class="details">
+          <p><span>⚙️</span> <strong>Drivetrain:</strong> {{ car.drivetrain }}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</ion-content>

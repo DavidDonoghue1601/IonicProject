@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <div class="title-wrapper">
+      <span class="custom-title">David's Showroom</span>
+    </div>
+
+    <!-- display account username at top -->
+    <div class="username-wrapper" *ngIf="username">
+      <span class="username">Welcome, {{ username }}!</span>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- if no username is set, display a login form -->
+  <div *ngIf="isLoginFormVisible" class="login-form">
+    <h2>Please Enter Your Username</h2>
+    <ion-input [(ngModel)]="newUsername" placeholder="Enter your username" class="username-input"></ion-input>
+    <ion-button (click)="onLogin()" class="login-button">Login</ion-button>
+  </div>
+
+  <!-- car grid -->
+  <div class="car-grid">
+    <div class="car-card" *ngFor="let car of cars; let i = index">
+      <ion-router-link [routerLink]="'/car' + (i + 1)">
+        <img [src]="car.image" [alt]="car.name" class="car-image" />
+      </ion-router-link>
+      <div class="car-info">
+        <h3>{{ car.name }}</h3>
+        <p>{{ car.price }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- about us button -->
+  <div class="about-button-wrapper">
+    <ion-button routerLink="/about" class="about-button">About Us</ion-button>
+  </div>
+
+  <!-- switch account button -->
+  <div class="switch-account-wrapper" *ngIf="username">
+    <ion-button (click)="switchAccount()" class="switch-account-button">
+      Switch Account
+    </ion-button>
+  </div>
+
+</ion-content>
